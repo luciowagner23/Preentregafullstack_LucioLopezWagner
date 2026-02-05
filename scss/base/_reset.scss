@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-principal;
+    background-color: $bg-color;
+    color: $color-texto;
+    // SOLUCIÓN AL FOOTER FLOTANDO:
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; // Esto empuja el footer hacia abajo
+    padding: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    color: $color-primario;
+    margin-bottom: 1.5rem;
+}

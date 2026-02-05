@@ -1,0 +1,32 @@
+$botones: (
+    "violeta": $color-primario,
+    "dorado": $color-secundario
+);
+
+@each $nombre, $color in $botones {
+    .btn-#{$nombre} {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: $color;
+        color: if($nombre == "dorado", #000, #fff); 
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        &:hover {
+            background-color: darken($color, 10%);
+        }
+    }
+}
+
+.btn-borde {
+    padding: 8px 16px;
+    border: 2px solid $color-primario;
+    color: $color-primario;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+    &:hover { background-color: $color-primario; color: $blanco; }
+}

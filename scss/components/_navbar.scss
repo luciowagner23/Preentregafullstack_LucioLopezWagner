@@ -1,0 +1,17 @@
+.navbar {
+    background-color: $color-primario !important; 
+    padding: 1rem;
+
+    .navbar-brand {
+        color: $color-secundario !important;
+        font-weight: bold;
+        font-size: 1.5rem;
+        &:hover { color: lighten($color-secundario, 15%) !important; }
+    }
+
+    .nav-link {
+        color: $blanco !important;
+        margin: 0 10px;
+        &:hover { color: $color-secundario !important; }
+    }
+}

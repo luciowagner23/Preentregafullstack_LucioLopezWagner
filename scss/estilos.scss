@@ -1,0 +1,12 @@
+// Importar todo en orden
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "base/reset";
+
+@import "components/navbar";
+@import "components/botones";
+@import "components/cards";
+
+@import "layout/footer";
+@import "layout/mediaqueries";
