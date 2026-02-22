@@ -1,89 +1,132 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarot Tech | Lecturas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lecturas disponibles en Tarot Tech: carta del día, pasado/presente/futuro y cruz celta.">
+  <title>Tarot Tech | Lecturas</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">🔮 Tarot Tech</a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="menuNavegacion">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="servicios.html">Lecturas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">🔮 Tarot Tech</a>
 
-    <main class="container my-5">
-        <h2 class="text-center mb-5">Nuestros Servicios</h2>
-        
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title">Lectura Completa</h3>
-                        <p class="card-text">Una hora de sesión profunda para analizar todos los aspectos de tu vida: amor, trabajo y salud.</p>
-                        <a href="contacto.html" class="btn-dorado">Reservar ($2000)</a>
-                    </div>
-                </div>
-            </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="col-md-6">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title">Lectura Express</h3>
-                        <p class="card-text">30 minutos para preguntas concretas. Ideal para decisiones rápidas.</p>
-                        <a href="contacto.html" class="btn-dorado">Reservar ($1000)</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title">Carta Astral</h3>
-                        <p class="card-text">Análisis de tu mapa natal combinado con tirada de Tarot evolutivo.</p>
-                        <a href="contacto.html" class="btn-dorado">Reservar ($3500)</a>
-                    </div>
-                </div>
-            </div>
+      <div class="collapse navbar-collapse" id="menuNavegacion">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./servicios.html">Lecturas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sobre-mi.html">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="./preguntas.html">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
-            <div class="col-md-6">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <h3 class="card-title">Parejas</h3>
-                        <p class="card-text">Tirada especial para analizar la compatibilidad y el futuro de la relación.</p>
-                        <a href="contacto.html" class="btn-dorado">Reservar ($2500)</a>
-                    </div>
-                </div>
-            </div>
+<main class="container my-5">
+  <h1 class="text-center mb-2">Lecturas disponibles</h1>
+  <p class="text-center mb-5">Elegí la que encaje con tu momento. Si no sabés cuál, me escribís y lo resolvemos.</p>
+
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <section class="card h-100">
+        <img src="../assets/img/cartas-1.jpg" class="card-img-top" alt="Cartas para lectura corta">
+        <div class="card-body d-flex flex-column">
+          <h2 class="h5 card-title">Carta del Día</h2>
+          <p class="card-text">Consulta cortita, bien al pie. Te sirve si querés claridad rápida o una orientación simple.</p>
+          <ul class="lista mt-2">
+            <li>Duración: 10–15 min</li>
+            <li>Formato: mensaje o audio</li>
+            <li>Ideal para: preguntas puntuales</li>
+          </ul>
+          <a href="./contacto.html" class="btn-violeta mt-auto">Consultar turno</a>
         </div>
-    </main>
+      </section>
+    </div>
 
-    <footer class="bg-dark text-white text-center pt-4 pb-4">
-        <p>Seguime en mis redes:</p>
-        <div class="mb-3">
-            <a href="#" class="text-white text-decoration-none mx-2">Instagram</a>
-            <a href="#" class="text-white text-decoration-none mx-2">Facebook</a>
+    <div class="col-12 col-md-6 col-lg-4">
+      <section class="card h-100">
+        <img src="../assets/img/cartas-2.jpg" class="card-img-top" alt="Lectura pasado presente futuro">
+        <div class="card-body d-flex flex-column">
+          <h2 class="h5 card-title">Pasado, Presente y Futuro</h2>
+          <p class="card-text">Para entender qué te trajo hasta acá y hacia dónde se mueve la situación.</p>
+          <ul class="lista mt-2">
+            <li>Duración: 30–40 min</li>
+            <li>Formato: videollamada</li>
+            <li>Ideal para: vínculos y decisiones</li>
+          </ul>
+          <a href="./contacto.html" class="btn-violeta mt-auto">Consultar turno</a>
         </div>
-        <p style="font-size: 14px; color: grey;">Copyright 2026 - Desarrollado por Lucio Lopez</p>
-    </footer>
+      </section>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="col-12 col-md-6 col-lg-4">
+      <section class="card h-100">
+        <img src="../assets/img/cartas-3.jpg" class="card-img-top" alt="Lectura cruz celta">
+        <div class="card-body d-flex flex-column">
+          <h2 class="h5 card-title">Cruz Celta</h2>
+          <p class="card-text">Lectura más profunda. Si estás trabado o con una decisión grande, es la mejor opción.</p>
+          <ul class="lista mt-2">
+            <li>Duración: 45–60 min</li>
+            <li>Formato: videollamada</li>
+            <li>Ideal para: cambios fuertes</li>
+          </ul>
+          <a href="./contacto.html" class="btn-violeta mt-auto">Consultar turno</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="row g-4 mt-5 align-items-stretch">
+    <div class="col-12 col-lg-6">
+      <div class="caja-destacada h-100">
+        <h2 class="h4 mb-3">Lo que vas a encontrar</h2>
+        <ul class="lista">
+          <li>Interpretación con contexto, no frases genéricas.</li>
+          <li>Opciones, riesgos y recomendaciones simples.</li>
+          <li>Cierre claro, para que te vayas con algo concreto.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+      <div class="caja-destacada h-100">
+        <h2 class="h4 mb-3">Lo que no hago</h2>
+        <ul class="lista">
+          <li>No asusto con “trabajos” ni te invento cosas.</li>
+          <li>No vendo amarres ni cosas raras.</li>
+          <li>No te digo lo que querés escuchar si no sale así.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center mt-5">
+    <a href="./contacto.html" class="btn-dorado">Pedir turno</a>
+    <a href="./preguntas.html" class="btn-borde ms-2">Ver preguntas</a>
+  </div>
+</main>
+
+<footer>
+  <p class="mb-2">Seguime en mis redes:</p>
+  <div class="mb-3">
+    <a href="#" aria-label="Ir a Instagram">Instagram</a>
+    <a href="#" aria-label="Ir a Facebook">Facebook</a>
+  </div>
+  <p class="mini">Proyecto Final Coderhouse - Lucio Lopez Wagner</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

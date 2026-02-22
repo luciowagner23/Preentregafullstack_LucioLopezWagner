@@ -1,32 +1,48 @@
-$botones: (
-    "violeta": $color-primario,
-    "dorado": $color-secundario
-);
+@use "sass:color";
 
-@each $nombre, $color in $botones {
-    .btn-#{$nombre} {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        background-color: $color;
-        color: if($nombre == "dorado", #000, #fff); 
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        &:hover {
-            background-color: darken($color, 10%);
-        }
-    }
+.btn-violeta {
+  display: inline-block;
+  background-color: $color-primario;
+  color: $blanco;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  @include transicion;
+}
+
+.btn-violeta:hover {
+  background-color: color.adjust($color-primario, $lightness: -8%);
+  transform: translateY(-1px);
+  color: $blanco;
+}
+
+.btn-dorado {
+  display: inline-block;
+  background-color: $color-secundario;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  @include transicion;
+}
+
+.btn-dorado:hover {
+  background-color: color.adjust($color-secundario, $lightness: -6%);
+  transform: scale(1.03);
+  color: #000;
 }
 
 .btn-borde {
-    padding: 8px 16px;
-    border: 2px solid $color-primario;
-    color: $color-primario;
-    background: transparent;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    display: inline-block;
-    &:hover { background-color: $color-primario; color: $blanco; }
+  display: inline-block;
+  border: 2px solid $color-primario;
+  color: $color-primario;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  @include transicion;
+}
+
+.btn-borde:hover {
+  background-color: $color-primario;
+  color: $blanco;
 }

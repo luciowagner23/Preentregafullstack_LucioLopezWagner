@@ -1,17 +1,27 @@
+@use "sass:color";
+
 .navbar {
-    background-color: $color-primario !important; 
-    padding: 1rem;
+  background-color: $color-primario !important;
+}
 
-    .navbar-brand {
-        color: $color-secundario !important;
-        font-weight: bold;
-        font-size: 1.5rem;
-        &:hover { color: lighten($color-secundario, 15%) !important; }
-    }
+.navbar .navbar-brand {
+  color: $color-secundario !important;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
 
-    .nav-link {
-        color: $blanco !important;
-        margin: 0 10px;
-        &:hover { color: $color-secundario !important; }
-    }
+.navbar .nav-link {
+  color: $blanco !important;
+  margin: 0 8px;
+  @include transicion;
+}
+
+.navbar .nav-link:hover {
+  color: color.adjust($color-secundario, $lightness: 10%) !important;
+}
+
+.navbar .nav-link.active {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }

@@ -1,6 +1,13 @@
-@media (min-width: 768px) {
-    .hero-section h1 { font-size: 3rem; }
+footer {
+  background-color: #222;
+  color: $blanco;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: auto;
 }
-@media (min-width: 992px) {
-    .container { max-width: 960px; margin: 0 auto; }
+
+footer a {
+  color: $color-secundario;
+  margin: 0 12px;
+  font-weight: 700;
 }
